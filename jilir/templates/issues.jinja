@@ -1,0 +1,48 @@
+{% extends "layout.jinja" %}
+{% block content %}
+<div id="content">
+    <section>
+        <div class="container">
+            <h2>Issues</h2>
+            {% for volume in volumes %}
+            <div class="volume-container">
+                <h3>Volume {{ volume.volume }}</h3>
+                {% for issue in volume.issues %}
+                <div class="issue-container">
+                    <h4 class="issue-title">
+                        {{issue.issue}} - {{issue.issue_title}}
+                    </h4>
+                    <div class="issue-contents">
+                        {% if issue.masthead %}
+                        <div class="masthead-container">
+                            <h3 class="masthead-title">Masthead</h3>
+                            <div class="masthead-contents">
+                                {% for position in issue.masthead %}
+                                <h4 class="position">{{position.position}}</h4>
+                                <div class="members">
+                                    <ul class="columns">
+                                    {% for member in position['members'] %}
+                                        <li>{{member}}</li>{% endfor %}
+                                    </ul>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>{% endif %}
+                        {% for article in issue.articles %}
+                        <div class="article">
+                            <div class="article-title">
+                                <a href="{{article.article_url}}" target="_blank">
+                                {{article.article_title}}
+                                </a>
+                            </div>
+                            <div class="article-authors">
+                                {{article.article_authors}}
+                            </div>
+                        </div>{% endfor %}
+                    </div>
+                </div>{% endfor %}
+            </div>{% endfor %}
+        </div>
+    </section>
+</div>
+{% endblock %}

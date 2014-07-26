@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <title>JILIR | Journal of International Law and International Relations</title>
+
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento:300,400,700,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sorts Mill Goudy:400" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/base.css">
+    {% if not index %}
+    <link rel="stylesheet" href="css/pages.css">
+    {% else %}
+    <link rel="stylesheet" href="css/index.css">
+    {% endif %}
+
+    <!-- js -->
+    {% if not index %}
+    <script type="text/javascript" src="js/base.js"></script>
+    {% endif %}
+
+</head>
+<body>
+<div id="wrapper">
+
+    <header>
+        <div class="container center clearfix">
+            <a href="index.html">
+                <h1 id="logo">
+                    jil<span style="color: #FCF708;">i</span>r
+                </h1>
+            </a>
+            <nav>
+                <a href="submissions.html">Submissions</a>
+                <a href="issues.html">Issues</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="team.html">Our Team</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main">
+    {% block content %}
+    {% endblock %}
+    </div>
+
+    {% block footer %}
+    {% endblock %}
+    <footer>
+        © 2014 The Journal of International Law and International
+        Relations • e: <a href="mailto:inquiries@jilir.org">inquiries@jilir.org</a>
+        <a href="https://twitter.com/jilireditor" target="_blank">
+            <img class="social-logo" src="static/tw.png" alt="JILIR's twitter">
+        </a>
+        <a href="https://www.facebook.com/pages/Journal-of-International-Law-and-International-Relations/813527105347753?ref_type=bookmark" target="_blank">
+            <img class="social-logo" src="static/fb.png" alt="JILIR's Facebook">
+        </a>
+    </footer>
+
+
+</div>
+</body>
+</html>

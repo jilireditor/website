@@ -1,0 +1,176 @@
+/* PAGES */
+header {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #00316B;
+  border-bottom: 10px solid #002450;
+  color: white;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+#main {
+  background-color: #fff;
+  padding-top: 150px;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 660px;
+}
+/* END PAGES */
+
+/* TEAM PAGE */
+ul {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #666;
+}
+
+/* TEAM MASTHEAD */
+.team .center {
+  text-align: center;
+  float: left;
+}
+.team .left {
+  text-align: left;
+}
+.team .right {
+  text-align: right;
+}
+.team .full {
+  width: 100%;
+}
+.team .half {
+  width: 50%;
+}
+.team .third {
+  width: 33%;
+}
+.team .associate-editors {
+  text-align: center;
+}
+
+.senior-advisors {
+  margin-top: 80px;
+}
+/* END TEAM MASTHEAD */
+
+.columns {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  text-align: left;
+}
+
+.columns li {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid
+  break-inside: avoid-column;
+}
+/* END TEAM PAGE */
+
+/* ISSUES PAGE */
+.issue-container {
+  background-color: #FAFAFA;
+  border-bottom: 3px solid #EEE;
+}
+
+.issue-title {
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.issue-contents {
+  font-size: 15px;
+  display: none;
+}
+
+.issue-open {
+  border-bottom: 3px solid #002450;
+}
+
+.issue-open .issue-title {
+  background-color: #00316B;
+  color: white;
+}
+
+.issue-open .issue-contents {
+  display: block;
+}
+
+.masthead-container {
+  margin: 10px;
+}
+
+.masthead-open {
+  border-radius: 2px;
+  color: white;
+}
+
+.masthead-title {
+  padding: 12px 5px;
+  margin: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #00316B;
+}
+
+.masthead-contents {
+  padding: 5px 10px;
+  background-color: #00316B;
+  display: none;
+}
+
+.masthead-contents .position {
+  margin: 12px 0;
+}
+
+.masthead-contents ul {
+  color: white;
+}
+
+.masthead-open .masthead-title {
+  background-color: #002450;
+  color: white;
+}
+
+.masthead-open .masthead-contents {
+  display: block;
+}
+
+.article {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 2px;
+}
+  .article:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+  .article .article-title {
+    float: left;
+    width: 60%;
+  }
+  .article .article-authors {
+    float: right;
+    text-align: right;
+    width: 40%;
+    font-style: italic;
+  }
+/* END ISSUES PAGE */
