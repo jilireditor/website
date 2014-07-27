@@ -64,21 +64,6 @@ ul {
 }
 /* END TEAM MASTHEAD */
 
-.columns {
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  column-count: 3;
-  column-gap: 20px;
-  text-align: left;
-}
-
-.columns li {
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid
-  break-inside: avoid-column;
-}
 /* END TEAM PAGE */
 
 /* ISSUES PAGE */
@@ -173,4 +158,10 @@ ul {
     width: 40%;
     font-style: italic;
   }
+
+.full-issue {
+  margin: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
 /* END ISSUES PAGE */

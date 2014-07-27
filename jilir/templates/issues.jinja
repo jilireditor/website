@@ -31,14 +31,23 @@
                         {% for article in issue.articles %}
                         <div class="article">
                             <div class="article-title">
-                                <a href="{{article.article_url}}" target="_blank">
-                                {{article.article_title}}
+                                {% if article.article_url %}
+                                <a href="docs/issues/{{article.article_url}}" target="_blank">
+                                    {{article.article_title}}
                                 </a>
+                                {% else %}
+                                    {{article.article_title}}
+                                {% endif %}
                             </div>
                             <div class="article-authors">
                                 {{article.article_authors}}
                             </div>
                         </div>{% endfor %}
+                        <div class="full-issue">
+                            <a href="docs/issues/{{issue.full_issue_url}}" target="_blank">
+                                Full Issue
+                            </a>
+                        </div>
                     </div>
                 </div>{% endfor %}
             </div>{% endfor %}
