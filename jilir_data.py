@@ -238,7 +238,7 @@ volumes = [
                     }, {
                         "article_title": "Norms, Institutions and UN Reform: The Responsibility to Protect",
                         "article_authors": "Jutta Brunnée and Stephen Toope",
-                        "article_url": "volume_2-1/2-1_9_BRUNEE_TROOPE_FINAL.pdf"
+                        "article_url": "volume_2-1/2-1_9_BRUNNEE_TOOPE_FINAL.pdf"
                     }, {
                         "article_title": "UN Policies and Strategies: Preventing State Failures and Rebuilding Societies",
                         "article_authors": "Bertrand G. Ramcharan",
